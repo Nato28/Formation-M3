@@ -1,0 +1,368 @@
+/* ******************************************
+LES IMPORTS
+****************************************** */
+
+@import 'partials/charteAstera';
+@import 'partials/button';
+@import 'partials/mixin';
+@import 'partials/nav&foot';
+
+
+/* ******************************************
+GENERAL
+****************************************** */
+
+.glyphicon {
+	margin-left: 1%;
+}
+
+
+/* ******************************************
+SECTION-TEXTE
+****************************************** */
+
+.title {
+	padding-bottom: 4.5em;
+	// A supprimer quand on met les index page
+	padding-top: 2.3em;
+}
+
+.subtitle {
+	padding-bottom: 1.3em;
+}
+
+.text {
+	padding-bottom: 1em;
+}
+
+
+/* ******************************************
+SECTION-ACCORDEON
+****************************************** */
+
+// TOP ACCORDEON
+
+#headingOne, #headingTwo, #headingThree, #headingFour, #headingFive {
+	@include cadre;
+	padding: 0.2em 1em 0.2em 2em;
+	margin-top: 1.8em;
+}
+
+
+// SECTION 1
+
+h3 {
+	padding-top: 1em;
+}
+
+
+// SECTION 2
+
+.secur {
+	margin-top: 3em;
+}
+
+#warn {
+	font-variant: small-caps;
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+#bouclier img {
+	height: 4.5em;
+	float: left;
+	padding-right: 1em;
+}
+
+#warning {
+	padding-top: 1.5em;
+	padding-left: 2em;
+
+	p {
+		font-size: 1.2em;
+		color: $orange;
+	}
+}
+
+
+// MODAL
+
+.modal-content {
+	min-height: 100%;
+
+
+	
+	.modal-body {
+		min-width: 100%;
+		height: auto;
+		background-color: #fff;
+		display: flex;
+		flex-direction: column;
+
+		.embed-responsive-1438by858{
+			padding-bottom: 61.7%;
+
+			embed {
+				max-width: 100%;
+			}
+
+		}
+		
+		h6 {
+			margin-bottom: 1em;
+		}
+	}
+
+}
+
+
+/* ******************************************
+MEDIAS QUERIES
+****************************************** */
+
+@media #{$laptop} {
+  .title {
+  	padding-bottom: 4.1em;
+  	padding-top: 2.1em;
+  }
+  .subtitle {
+  	padding-bottom: 1em;
+  }
+  .text {
+  	padding-bottom: 1em;
+  }
+  #headingOne, #headingTwo {
+  	@include cadre;
+  	padding: 0.2em 1em 0.2em 2em;
+  	margin-top: 1.7em;
+  }
+  h3 {
+  	padding-top: 1em;
+  }
+  .secur {
+  	margin-top: 2.8em;
+  }
+
+  #warn {
+  	font-variant: small-caps;
+  	font-size: 1.4em;
+  	font-weight: bold;
+  }
+
+  #bouclier img {
+  	height: 4.2em;
+  	float: left;
+  	padding-right: 1em;
+  }
+
+  #warning {
+  	padding-top: 1.5em;
+  	padding-left: 2em;
+
+  	p {
+  		font-size: 1.2em;
+  		color: $orange;
+  	}
+  }
+}
+
+@media #{$laptopMini} {
+  .title {
+    padding-bottom: 3.8em;
+    padding-top: 2.9em;
+  }
+  .subtitle {
+    padding-bottom: 0.9em;
+  }
+  .text {
+    padding-bottom: 1em;
+  }
+  #headingOne, #headingTwo {
+    @include cadre;
+    padding: 0.2em 1em 0.2em 2em;
+    margin-top: 1.6em;
+  }
+  .btn-responsive {
+	padding: 0.4em 1.8em 0.4em 1.8em;	
+  }
+  h3 {
+    padding-top: 1em;
+  }
+  .secur {
+    margin-top: 2.6em;
+  }
+
+  #warn {
+    font-variant: small-caps;
+    font-size: 1.4em;
+    font-weight: bold;
+  }
+
+  #bouclier img {
+    height: 4.0em;
+    float: left;
+    padding-right: 1em;
+  }
+
+  #warning {
+    padding-top: 1.4em;
+    padding-left: 2em;
+
+    p {
+      font-size: 1.1em;
+      color: $orange;
+    }
+  }
+}
+
+@media #{$tablet} {
+  .title {
+    padding-bottom: 3.4em;
+    padding-top: 1.8em;
+  }
+  .subtitle {
+    padding-bottom: 0.7em;
+  }
+  .text {
+    padding-bottom: 0.9em;
+  }
+  #headingOne, #headingTwo {
+    @include cadre;
+    padding: 0.2em 1em 0.2em 2em;
+    margin-top: 1.3em;
+  }
+  .btn-responsive {
+	padding: 0.3em 1.6em 0.3em 1.6em;	
+  }
+  h3 {
+    padding-top: 1em;
+  }
+  .secur {
+    margin-top: 2.4em;
+  }
+
+  #warn {
+    font-variant: small-caps;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+  #bouclier img {
+    height: 3.8em;
+    float: left;
+    padding-right: 1em;
+  }
+
+  #warning {
+    padding-top: 1.2em;
+    padding-left: 2em;
+
+    p {
+      font-size: 1em;
+      color: $orange;
+    }
+  }
+}
+
+@media #{$mobileLandscape} {
+  .title {
+    padding-bottom: 3em;
+    padding-top: 1.5em;
+  }
+  .subtitle {
+    padding-bottom: 0.6em;
+  }
+  .text {
+    padding-bottom: 0.8em;
+  }
+  #headingOne, #headingTwo {
+    @include cadre;
+    padding: 0.2em 1em 0.2em 2em;
+    margin-top: 1.4em;
+  }
+  .btn-responsive {
+	padding: 0.2em 1.2em 0.2em 1.2em;	
+  }
+  h3 {
+    padding-top: 1em;
+  }
+  .secur {
+    margin-top: 2.2em;
+  }
+
+  #warn {
+    font-variant: small-caps;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  #bouclier img {
+    height: 3.5em;
+    float: left;
+    padding-right: 1em;
+  }
+
+  #warning {
+    padding-top: 1.1em;
+    padding-left: 2em;
+
+    p {
+      font-size: 0.8em;
+      color: $orange;
+    }
+  }
+}
+
+@media #{$mobilePortrait} {
+  .title {
+    padding-bottom: 2.5em;
+    padding-top: 1.1em;
+  }
+  .subtitle {
+    padding-bottom: 0.4em;
+  }
+  .text {
+    padding-bottom: 0.7em;
+  }
+  #headingOne, #headingTwo {
+    @include cadre;
+    padding: 0.2em 1em 0.2em 2em;
+    margin-top: 1.4em;
+  }
+  .btn-responsive {
+	padding: 0.1em 0.9em 0.1em 0.9em;	
+  }
+  h3 {
+    padding-top: 0.9em;
+  }
+  .secur {
+    margin-top: 2.1em;
+  }
+
+  #warn {
+    font-variant: small-caps;
+    font-size: 1em;
+    font-weight: bold;
+  }
+
+  #bouclier img {
+    height: 3.2em;
+    float: left;
+    padding-right: 1em;
+  }
+
+  #warning {
+    padding-top: 1em;
+    padding-left: 2em;
+
+    p {
+      font-size: 0.7em;
+      color: $orange;
+    }
+  }
+}
+
+
+/* ******************************************
+THAT'S ALL FOLKS !
+****************************************** */

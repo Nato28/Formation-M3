@@ -1,0 +1,189 @@
+/* ******************************************
+LOGO TOP
+****************************************** */
+
+#logo1 img {
+	height: 6em;
+}
+
+header {
+	margin: 3em 0 3em 0;
+	margin-left: 10%;
+}
+
+
+/* ******************************************
+BARRE DE MENU
+****************************************** */
+
+nav {
+	background-color: black;
+	margin: 1.5em 0 1.5em 0;
+	padding: 0.1em;
+
+		ul {
+			display: flex;
+			list-style-type: none;
+			list-style-position: outside;
+			@include bordure;
+			padding: 0.9em 0 0.8em 0;
+		}
+
+		.menu {
+			font-family: $Raleway;
+			color: white;
+			font-size: 1.9em;
+			padding-right: 5em;
+		}
+
+		#home {
+			color: white;
+		}
+	}
+
+
+/* ******************************************
+INDEX DE PAGE
+****************************************** */
+
+aside {
+	margin-top: 1.5em;
+
+		ul {
+			display: flex;
+			float: right;
+			list-style-type: none;
+			list-style-position: outside;
+			padding-left: 0px;
+			padding-top: 0.9em;
+		}
+
+		.page {
+			font-family: $Raleway;
+			color: $gris-text;
+			font-size: 1em;
+			padding-right: 2em;
+		}
+
+		#titrePage {
+			color: $orange;
+		}
+	}
+
+
+
+/* ******************************************
+PIED DE PAGE
+****************************************** */
+
+footer {
+	background-color: $gris-boite;
+	margin-top: 7em;
+	padding: 1em 10% 5em 10%;
+
+	#foot {
+		display: flex;
+		justify-content: center;
+		border-top: solid 1px $gris-contour;
+		padding-top: 0.5em;
+	}
+
+	p {
+		font-family: $Raleway;
+	}
+}
+
+
+/* ******************************************
+MEDIAS QUERIES
+****************************************** */
+
+@media #{$laptop} {
+	#logo1 img {
+		height: 5.7em;
+	}
+
+	header {
+		margin: 2.7em 0 2.7em 0;
+		margin-left: 10%;
+	}
+
+	nav {
+		.menu {
+			font-size: 1.9em;
+		}
+	}
+}
+
+@media #{$laptopMini} {
+	#logo1 img {
+		height: 5.5em;
+	}
+
+	header {
+		margin: 2.5em 0 2.5em 0;
+		margin-left: 10%;
+	}
+
+	nav {
+		.menu {
+			font-size: 1.8em;
+		}
+	}
+}
+
+@media #{$tablet} {
+	#logo1 img {
+		height: 5.3em;
+	}
+
+	header {
+		margin: 2.3em 0 2.3em 0;
+		margin-left: 10%;
+	}
+
+	nav {
+		.menu {
+			font-size: 1.6em;
+		}
+	}
+}
+
+@media #{$mobileLandscape} {
+	#logo1 img {
+		height: 5.2em;
+	}
+
+	header {
+		margin: 2.1em 0 2.1em 0;
+		margin-left: 10%;
+	}
+
+	nav {
+		.menu {
+			font-size: 1.5em;
+		}
+	}
+}
+
+@media #{$mobilePortrait} {
+	#logo1 img {
+		height: 5em;
+	}
+
+	header {
+		margin: 1.9em 0 1.9em 0;
+		margin-left: 10%;
+	}
+
+	nav {
+		.menu {
+			font-size: 1.2em;
+		}
+	}
+}
+
+
+/* ******************************************
+THAT'S ALL FOLKS !
+****************************************** */

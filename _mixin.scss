@@ -1,0 +1,34 @@
+/* ******************************************
+CADRE ORANGE
+****************************************** */
+
+$radius: 14px 0px 14px 0px;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin cadre {
+	background: $orange;
+	border-style: none;
+	@include border-radius($radius);
+	margin-top: 1%;
+	padding: 0.2em 1em 0.2em 2em;
+}
+
+
+/* ******************************************
+BORDURE
+****************************************** */
+
+@mixin bordure {
+  margin: 0 10% 0 10%;
+}
+
+
+/* ******************************************
+THAT'S ALL FOLKS !
+****************************************** */

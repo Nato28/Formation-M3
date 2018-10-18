@@ -1,0 +1,301 @@
+/* ******************************************
+COULEUR CHARTE
+****************************************** */
+
+$orange: #F29400;
+$vert: #8ABD24;
+$gris-text: #707173;
+$rouge-info: #CD1619;
+$gris-contour: #CCC;
+$gris-boite: #EFEFEF;
+
+
+/* ******************************************
+POLICE BASIC
+****************************************** */
+
+//@import url(https://fonts.googleapis.com/css?family=Raleway|Roboto);
+//FONT FAMILY
+
+$Roboto: 'Roboto';
+$RobotoM: 'RobotoMedium';
+$RobotoL: 'RobotoLight';
+$RalewayXB: 'RalewayExtraBold';
+$RalewaySM: 'RalewaySemiBold';
+$Raleway: 'Raleway';
+$RalewayL: 'RalewayLight';
+
+
+@font-face {
+	font-family: 'Roboto';
+	src: local('Roboto'), local('Roboto-Regular'), url('polices/Roboto/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoMedium';
+	src: local('Roboto'), local('Roboto-Medium'), url('polices/Roboto/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RobotoLight';
+	src: local('Roboto'), local('Roboto-Light'), url('polices/Roboto/Roboto/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+ font-family: 'RalewayExtraBold';
+ src: url('polices/Raleway/Raleway/Raleway-ExtraBold.TTF');
+}
+
+@font-face {
+	font-family: 'RalewaySemiBold';
+	src: url('polices/Raleway/Raleway/Raleway-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url('polices/Raleway/Raleway/Raleway-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'RalewayLight';
+	src: url('polices/Raleway/Raleway/Raleway-Light.ttf') format('truetype');
+}
+
+
+
+// FONT SIZE
+
+$h1-size: 3.8em;
+$h2-size: 2.1em;
+$h3-size: 1.6em;
+$h4-size: 2em;
+$h5-size: 1.4em;
+$h6-size: 1.4em;
+$p-size: 1.3em;
+$a-size: 1.5em;
+
+
+h1 {
+	font-family: $RalewayXB;
+	font-size: $h1-size;
+	color: $orange;
+}
+
+h2 {
+	font-family: $RobotoL;
+	font-size: $h2-size;
+	color: $orange;
+	margin-top: 1%;
+	letter-spacing:  -1px;
+}
+
+h3 {
+	font-family: $Roboto;
+	font-size: $h3-size;
+	color: $gris-text;
+}
+
+h4 {
+	font-family: $Raleway;
+	color: white;
+	font-size: $h4-size;
+}
+
+h5 {
+	font-family: $RalewayL;
+	color: white;
+	font-size: $h5-size;
+}
+
+h6 {
+	font-family: $RalewayL;
+	color: $gris-text;
+	font-size: $h3-size;
+}
+
+p {
+	font-family: $RobotoL;
+	color: $gris-text;
+	font-size: $p-size;
+	text-align: justify;
+	letter-spacing:  -1px;
+}
+
+a {
+	@extend p;
+	font-family: $Roboto;
+	color: $orange;
+	font-size: $a-size;
+}
+
+// Seul 'hover' marche, regarder les autres...
+a:link {
+	text-decoration: none
+}
+
+a:visited {
+	color: darken($orange, 10%);
+}
+
+a:hover {
+	color: darken($orange, 5%);
+}
+
+a:active {
+	color: darken($orange, 10%);
+}
+
+a:focus {
+	color: lighten($orange, 10%);
+}
+
+mark {
+	color: $orange;
+	background-color: white;
+}
+
+
+/* ******************************************
+GENERAL
+****************************************** */
+
+section {
+	margin: 0 10% 0 10%;
+}
+
+
+/* ******************************************
+MEDIAS QUERIES
+****************************************** */
+
+$desktop: "(min-width: 1367px) and (max-width:1440px)";
+$laptop: "(min-width: 1281px) and (max-width: 1366px)";
+$laptopMini: "(min-width: 992px) and (max-width: 1280px)";
+$tablet: "(min-width: 768px) and (max-width: 991px)";
+$mobileLandscape: "(min-width: 576px) and (max-width: 767px)";
+$mobilePortrait: "(max-width: 575px)";
+
+@media #{$laptop} {
+ h1 {
+	 font-size: $h1-size - 0.3;
+ }
+ h2 {
+   font-size: $h2-size - 0.2;
+ }
+ h3 {
+   font-size: $h3-size - 0.3;
+ }
+ h4 {
+   font-size: $h4-size - 0.1;
+ }
+ h5 {
+   font-size: $h5-size;
+ }
+ p {
+   font-size: $p-size - 0.1;
+ }
+ a {
+   font-size: $a-size - 0.2;
+ }
+}
+
+@media #{$laptopMini} {
+ h1 {
+	 font-size: $h1-size - 0.5;
+ }
+ h2 {
+   font-size: $h2-size - 0.4;
+ }
+ h3 {
+   font-size: $h3-size - 0.5;
+ }
+ h4 {
+   font-size: $h4-size - 0.3;
+ }
+ h5 {
+   font-size: $h5-size - 0.1;
+ }
+ p {
+   font-size: $p-size - 0.2;
+ }
+ a {
+   font-size: $a-size - 0.3;
+ }
+}
+
+@media #{$tablet} {
+ h1 {
+	 font-size: $h1-size - 0.7;
+ }
+ h2 {
+   font-size: $h2-size - 0.6;
+ }
+ h3 {
+   font-size: $h3-size - 0.6;
+ }
+ h4 {
+   font-size: $h4-size - 0.4;
+ }
+ h5 {
+   font-size: $h5-size - 0.1;
+ }
+ p {
+   font-size: $p-size - 0.3;
+ }
+ a {
+   font-size: $a-size - 0.4;
+ }
+}
+
+@media #{$mobileLandscape} {
+ h1 {
+	 font-size: $h1-size - 0.8;
+ }
+ h2 {
+   font-size: $h2-size - 0.7;
+ }
+ h3 {
+   font-size: $h3-size - 0.7;
+ }
+ h4 {
+   font-size: $h4-size - 0.5;
+ }
+ h5 {
+   font-size: $h5-size - 0.2;
+ }
+ p {
+   font-size: $p-size - 0.4;
+ }
+ a {
+   font-size: $a-size - 0.5;
+ }
+}
+
+@media #{$mobilePortrait} {
+ h1 {
+	 font-size: $h1-size - 0.9;
+ }
+ h2 {
+   font-size: $h2-size - 0.8;
+ }
+ h3 {
+   font-size: $h3-size - 0.8;
+ }
+ h4 {
+   font-size: $h4-size - 0.4;
+ }
+ h5 {
+   font-size: $h5-size - 0.2;
+ }
+ p {
+   font-size: $p-size - 0.4;
+ }
+ a {
+   font-size: $a-size - 0.6;
+ }
+}
+
+
+/* ******************************************
+THAT'S ALL FOLKS !
+****************************************** */
